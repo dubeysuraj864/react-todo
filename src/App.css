@@ -3,12 +3,15 @@
 .App{
   text-align: center;
   padding: 30px;
-  background: linear-gradient(to right, #da4453, #89216b) ;
+
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: auto;
 
+}
+body{
+  background: linear-gradient(to right, #da4453, #89216b) ;
 }
 .container{
   display: flex;
@@ -70,4 +73,8 @@ form{
 .col-button{
   position: absolute;
   right: 0;
+}
+.bottom{
+  display: flex;
+  flex-direction: column-reverse;
 }
