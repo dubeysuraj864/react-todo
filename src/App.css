@@ -1,38 +1,73 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@300;400;900&family=Poppins:wght@100;200;300;400;500&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+.App{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(to right, #da4453, #89216b) ;
+  font-family: 'Poppins', sans-serif;
   display: flex;
+  justify-content: center;
+  height: 100vh;
+
+}
+.container{
+  display: flex;
+  justify-content:center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+header{
+  font-family: 'DynaPuff', cursive;
+  font-size: 30px;
+  color: #fff;
+}
+input,button{
+  outline: none;
+  border:none;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(44, 44, 44);
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: 10px;
+
+}
+button{
+  color: #fff;
+  background-color: #667eea;
+  border-radius: 5px 5px 5px 5px;
+  margin: 2px 1px;
+  /* width: 90px; */
+
+}
+form{
+  border: 2px solid #667eea;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.533);
+  width: fit-content;
+    
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+  margin: 20px;
+  flex-direction: row;
+  gap: 60px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  width: 300px;
+}
+.col-title{
+  width: 250px;
+}
+.col-button{
+  position: absolute;
+  right: 0;
 }
