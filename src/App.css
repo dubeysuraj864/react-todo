@@ -1,80 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@300;400;900&family=Poppins:wght@100;200;300;400;500&family=Potta+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
-.App{
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@300;400;900&family=Poppins:wght@100;200;300;400;500&family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap");
+.App {
   text-align: center;
   padding: 30px;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   height: auto;
-
 }
-body{
-  background: linear-gradient(to right, #da4453, #89216b) ;
+body {
+  background: linear-gradient(to right, #da4453, #89216b);
 }
-.container{
+.container {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-header{
-  font-family: 'DynaPuff', cursive;
-  font-size: 30px;
+header {
+  font-family: "DynaPuff", cursive;
+  font-size: 40px;
   color: #fff;
+  
 }
-input,button{
+form {
+  background-color: rgba(255, 255, 255, 0.182);
+  color: #fff;
+  width: fit-content;
+  margin-top: 30px;
+  padding-right: 50px;
+  position: relative;
+}
+input,
+button {
   outline: none;
-  border:none;
+  border: none;
   background-color: rgba(255, 255, 255, 0);
-  color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
   padding: 10px 5px;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 20px;
 
 }
-button{
+button {
   color: #fff;
   background-color: #667eea;
-  border-radius: 5px 5px 5px 5px;
-  margin: 2px 1px;
-  /* width: 90px; */
-
+  cursor: pointer;
+  transition: all .5s ease;
+  position: absolute;
+  right: 0px;
+  padding: 10px;
 }
-form{
-  border: 2px solid #667eea;
-  background-color: #fff;
-  width: 100%;
-  border-radius: 7px;
-  margin-top: 20px;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.533);
-  width: fit-content;
-    
+button:hover{
+  background-color: #3b56cf;
 }
 
 
-.items{
+.items {
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 5px;
-  margin: 20px;
+  margin: 10px;
   flex-direction: row;
-  gap: 60px;
+  /* gap: 60px; */
   color: #fff;
   text-align: left;
   position: relative;
   width: 300px;
+  padding: 9.5px 10px;
+  background-color: rgba(255, 255, 255, 0.182);
 }
-.col-title{
+.col-title {
   width: 250px;
 }
-.col-button{
+.col-button {
   position: absolute;
-  right: 0;
+  right: 0px;
+  top: 0px;
 }
-.bottom{
+.bottom {
   display: flex;
   flex-direction: column-reverse;
+}
+#msg{
+  margin: 20px;
+  color: #fff;
 }

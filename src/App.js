@@ -12,7 +12,7 @@ function App() {
     }
   };
 
-  const [text, setText] = useState("");
+  const [text, setText] = useState("Add list...");
   const [task, setTask] = useState(getLocalItem());
 
   const changeText = (e) => {
@@ -21,8 +21,16 @@ function App() {
   const submitHandler = (e) => {
     console.log("submitted");
     e.preventDefault();
-    setTask([...task, text]);
+
+    if(text === ""){
+      document.getElementById("msg").innerHTML= `Please type something!!`
+    }
+    else{
+      setTask([...task, text]);
     setText("");
+    document.getElementById("msg").innerHTML= `Task added to list..`
+    }
+    
   };
 
   const removeTask = (a) => {
@@ -31,6 +39,7 @@ function App() {
     });
 
     setTask(finalData);
+    document.getElementById("msg").innerHTML= `Task deleted from list..`
   };
 
   useEffect(() => {
@@ -45,7 +54,9 @@ function App() {
           <form onSubmit={submitHandler}>
             <input type="text" value={text} onChange={changeText} />
             <button type="submit">Add</button>
+           
           </form>
+          <div id="msg"></div>
 
           <div className="msg"></div>
         </div>

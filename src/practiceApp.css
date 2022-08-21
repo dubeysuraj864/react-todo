@@ -1,0 +1,30 @@
+.App{
+    text-align: center;
+
+}
+body{
+    color: whitesmoke;
+    background: linear-gradient(to right,#355c7d, #6c5b7b, #c06c84 );
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width:100%;
+
+}
+.title {
+    display: flex;
+    justify-content: left;
+    width: 300px;
+}
+.title li{
+    width: 230px;
+    margin: 10px 0px;
+    text-align: left;
+}
+.delete-btn{
+    position: absolute;
+    right: 50px;
+}
